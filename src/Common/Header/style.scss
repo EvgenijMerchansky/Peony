@@ -1,0 +1,105 @@
+.custom-container {
+    height: auto;
+
+    &__background {
+        background-color: #6c4c41;
+        border-radius: 0 0 4px 4px;
+        position: fixed;
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    &__donate {
+        margin: 0;
+        padding: 5px;
+        color: green;
+        text-align: center;
+        height: auto;
+        position: relative;
+
+        p {
+            margin: 0;
+        }
+
+        button {
+            width: 100%;
+            outline: none;
+            padding: 2px;
+            background-color: transparent;
+            border: 2px solid transparent;
+            border-radius: 4px;
+            color: #ccc;
+            cursor: pointer;
+            font-size: 14px;
+
+            &:hover {
+                color: #ffffff;
+                background-color: #583d34;
+            }
+        }
+    }
+
+    &__logotype {
+        padding: 5px;
+        text-align: center;
+        width: 40%;
+        background-color: #6c4c41;
+        position: absolute;
+        height: 55px;
+        margin: 0 25%;
+        border-radius: 0 0 7px 7px;
+        box-shadow: 0 0 6px 1px #2e2e2e;
+        z-index: 3;
+        cursor: pointer;
+
+        &:hover {
+            background-color: #563c33;
+            height: 65px;
+
+            img {
+                width: 120px;
+            }
+        }
+
+        img {
+            margin-top: 6px;
+        }
+    }
+
+    &__new-article {
+        margin: 0;
+        padding: 5px;
+        text-align: center;
+        height: auto;
+
+        p {
+            margin: 0;
+        }
+
+        button {
+            width: 100%;
+            outline: none;
+            padding: 2px;
+            background-color: transparent;
+            border: 2px solid transparent;
+            border-radius: 4px;
+            color: #ccc;
+            cursor: pointer;
+            font-size: 14px;
+
+            &:hover {
+                color: #ffffff;
+                background-color: #583d34;
+            }
+        }
+    }
+}
+
+#fixed-header {
+    width: inherit;
+    margin: 0 auto;
+    height: 40px;
+    align-items: center;
+    text-align: center;
+    padding: 0 20%;
+}

@@ -1,0 +1,52 @@
+.fields {
+  color: #ccc;
+  background-color: #6c4c41;
+  position: absolute;
+  width: 1140px;
+  left: -855px;
+  top: 42px;
+  padding: 30px;
+  z-index: 1;
+  opacity: .9;
+  border-radius: 4px;
+
+  &__title {
+      width: 100%;
+      text-align: left;
+      margin: 0;
+  }
+
+  &__desc {
+      width: 100%;
+      text-align: left;
+      padding: 10px 0 5px 0;
+  }
+
+  &__title-field {
+      width: 100%;
+
+  }
+
+  &__description-field {
+      width: 100%;
+  }
+
+  &__article-field {
+      width: 100%;
+      min-height: 300px;
+      max-height: 350px;
+  }
+
+  &__post-article {
+      width: 100%;
+  }
+
+  &__name-field {
+      width: 100%;
+  }
+
+  &__email-field {
+      width: 100%;
+  }
+
+}

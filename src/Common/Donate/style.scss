@@ -1,0 +1,43 @@
+.donate {
+    width: 200px;
+    height: 80px;
+    background-color: #6c4c41;
+    position: absolute;
+    left: 30px;
+    top: 42px;
+    padding: 5px;
+    border-radius: 4px;
+    z-index: 1;
+
+    &__card {
+        width: 100%;
+        padding: 5px;
+        text-align: center;
+        color: #ccc;
+
+      &:hover {
+          color: #fff;
+      }
+
+    }
+
+    &__link {
+        text-decoration: none;
+        text-align: center;
+        padding: 5px;
+        border-radius: 4px;
+
+        &:hover {
+            background-color: #5b9a21;
+        }
+
+        a {
+            color: #ccc;
+
+            &:hover {
+                color: white;
+                text-decoration: none;
+            }
+        }
+    }
+}
