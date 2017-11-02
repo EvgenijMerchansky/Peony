@@ -1,4 +1,5 @@
 import axios from 'axios';
+import { SERVER_ALIAS } from '../constants';
 
 export const hideModal = () => {
     return (dispatch) => {
@@ -76,5 +77,31 @@ export const disableError = () => {
 };
 
 export const dbArticles = () => {
-    return axios.get('http://localhost:3000/authorized');
+    return axios.get(`${SERVER_ALIAS}/authorized`);
+};
+
+export const checkerId = (id) => {
+
+     axios({
+        method: 'post',
+        url: `${SERVER_ALIAS}/:id`,
+        data: {
+            id: id
+        },
+    });
+};
+
+// export const published = () => {
+//     return axios.get(`${SERVER_ALIAS}/:id`);
+// };
+
+export const deleteItem = (id) => {
+    console.log(id, 'deleteItem');
+    axios({
+        method: 'post',
+        url: `${SERVER_ALIAS}/:iditem`,
+        data: {
+            id: id
+        },
+    });
 };

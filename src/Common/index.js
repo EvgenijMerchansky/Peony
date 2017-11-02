@@ -14,7 +14,7 @@ class FRside extends Component{
                     <div>
                         <Route exact path="/" component={Header}/>
                         <Route path="/admin" component={Dashboard}/>
-                        <Route path="/authorized" component={Admin}/>
+                        <Route path="/authorized/:id" component={Admin}/>
                     </div>
                 </Router>
             </div>

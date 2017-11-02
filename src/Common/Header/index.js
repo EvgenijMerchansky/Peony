@@ -6,7 +6,7 @@ import { ADMIN_PAID_INFO } from '../../constants';
 import style from './style.scss';
 
 import Modal from './../Modal';
-import Notification from './../Notification';
+import Notification from '../SendArticleNotification';
 import Donate from './../Donate';
 
 class Header extends Component{

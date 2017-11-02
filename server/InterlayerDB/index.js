@@ -27,6 +27,17 @@ export const findAllArticles = () => {
 
     return Article.find({}, (err, docs) => docs);
 
-    // console.log(articles);
 };
+
+export const updateArticleState = (id) => {
+    Article.updateOne({id: id}, {accepted: true}, (err, doc) => {
+        if (err) throw err;
+    });
+};
+
+// export const publishArticle = () => {
+//     return Article.find({accepted: true}, (err, doc) => {
+//         console.log(doc, 'DOCS')
+//     })
+// };
 

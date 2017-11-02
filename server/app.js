@@ -14,7 +14,16 @@ app.post('/articles', function (req, res) {
 });
 
 app.get('/authorized', (req, res) => {
-    DButils.findAllArticles().then((data) => res.send(data));
+    DButils.findAllArticles().then(data => res.send(data));
+});
+
+app.post('/:id', (req, res) => {
+    DButils.updateArticleState(req.body.id);
+});
+
+app.post('/:iditem', (req, res) => {
+    console.log(req, 'REQUEST BODY');
+    // DButils.publishArticle().then(data => res.send(data));
 });
 
 app.listen(3000, function () {

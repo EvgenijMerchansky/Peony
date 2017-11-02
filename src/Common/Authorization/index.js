@@ -25,7 +25,8 @@ class Dashboard extends Component {
         }
 
         if (this.log === this._adminLogin && this.pass === this._adminPassword) {
-            this.alias = '/authorized';
+            let rand = Math.random();
+            this.alias = `/authorized/:id${rand}`;
         }
         this.forceUpdate();
     };
